@@ -34,7 +34,7 @@ set (PROJECT_NAME  pro_sandbox)
 
 
 # var for application for create and write
-set(APP_CREATE    Timber_Game)
+set(APP_CREATE    Pong)
 
 
 #set name for project
