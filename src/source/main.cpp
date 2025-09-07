@@ -24,7 +24,7 @@ int main()
     // Set the font to our retro-style
     hud.setFont(font);
     // Make it nice and big
-    hud.setCharacterSize(75);
+    hud.setCharacterSize(32);
     // Choose a color
     hud.setFillColor(Color::White);
     hud.setPosition(20, 20);
@@ -99,6 +99,26 @@ int main()
                 lives = 3;
             }
         }
+
+
+        // Handle ball hitting the bottom
+        if (ball.getPosition().top < 0)
+        {
+            // reverse the ball direction
+            ball.reboundBatOrTop();
+            // Remove a life
+            // lives--;
+            // // Check for zero lives
+            // if (lives < 1) {
+            //     // reset the score
+            //     score = 0;
+            //     // reset the lives
+            //     lives = 3;
+            // }
+        }
+
+
+
 
         // Handle ball hitting sides
         if (ball.getPosition().left < 0 ||

@@ -6,7 +6,8 @@ class Ball
 private:
     Vector2f m_Position;
     RectangleShape m_Shape;
-    float m_Speed = 300.0f;
+    // float m_Speed = 300.0f;
+    float m_Speed = 750.0f;
     float m_DirectionX = .2f;
     float m_DirectionY = .2f;
 public:
